@@ -35,11 +35,11 @@ header{
 nav{
     grid-area: nav;
     border-radius: 30px;
-    align-content: center;
+    align-items: center;
     display: flex;
     justify-content: space-around;
     background-color: grey;
-    color: white;
+
 }
 
 .lien{
@@ -49,6 +49,7 @@ nav{
     margin: auto;
     border-radius: 20px;
     height: 20px;
+    color: white;
 }
 
 .lien:hover{
@@ -238,5 +239,17 @@ footer{
     grid-area: footer;
     border-radius: 30px;
     background-color: grey;
+    align-content: center;
+    justify-items: right;
+    padding-right: 20px;
+    font-size: 0.9em;
+    color: white;
+}
 
+.source{
+    padding-top: 10px;
+}
+
+.source:hover{
+    color: blue;
 }
