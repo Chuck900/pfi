@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(grey,rgb(30 30 30),rgb(30 30 30),rgb(30 30 30),rgb(30 30 30),grey);
+}
+
+
+.conteneur{
+    display: grid;
+    height: 95vh;
+    grid-gap: 8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% 10% 62% 15%;
+    grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main"
+                    "footer";
+
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+nav{
+    grid-area: nav;
+    border-radius: 30px;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    color: white;
+}
+
+.lien{
+    display: inline-block;
+    padding: 1em;
+    align-content: center;
+    margin: auto;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.lien:hover{
+    background-color: rgb(255, 186, 49);
+    border-radius: 20px;
+    height: 20px;
+}
+
+main{
+    grid-area: main;
+    background-color: white;
+    border-radius: 30px;
+    align-content: center;
+    justify-items: center;
+}
+
+.horaire{
+    width: 95%;
+    height: 95%;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: repeat(1fr, 6);
+    grid-template-rows: repeat(1fr, 12);
+    grid-template-areas: 
+                    ". lundi mardi mercredi jeudi vendredi"
+                    "a math1 philo1 . philo2 prog4"
+                    "b math1 philo1 . philo2 prog4"
+                    "c prog1 . prog2 . ."
+                    "d prog1 . prog2 . exp2"
+                    "e . math2 . . exp2"
+                    "f . . . math3 ."
+                    "g . . . math3 ."
+                    "h . . . prog3 ."
+                    "i . exp1 web prog3 ."
+                    "j . exp1 web . ."
+                    "k . exp1 web . .";
+}
+
+.cases{
+    align-content: center;
+    text-align: center;
+    border: solid black 1px;
+}
+
+.nomcours{
+    font-weight: bold;
+}
+
+.code{
+    font-style: italic;
+}
+
+.Lundi{
+    grid-area: lundi;
+}
+
+.Mardi{
+    grid-area: mardi;
+}
+
+.Mercredi{
+    grid-area: mercredi;
+}
+
+.Jeudi{
+    grid-area: jeudi;
+}
+
+.Vendredi{
+    grid-area: vendredi;
+}
+
+.case{
+    text-align: center;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
+}
+
+.g{
+    grid-area: g;
+}
+
+.h{
+    grid-area: h;
+}
+
+.i{
+    grid-area: i;
+}
+
+.j{
+    grid-area: j;
+}
+
+.k{
+    grid-area: k;
+}
+
+.math{
+    background-color: aquamarine;
+}
+
+.math1{
+    grid-area: math1;
+}
+
+.math2{
+    grid-area: math2;
+}
+
+.math3{
+    grid-area: math3;
+}
+
+.prog{
+    background-color: orange;
+}
+
+.prog1{
+    grid-area: prog1;
+}
+
+.prog2{
+    grid-area: prog2;
+}
+
+.prog3{
+    grid-area: prog3;
+}
+
+.prog4{
+    grid-area: prog4;
+}
+
+.philo{
+    background-color: blueviolet;
+}
+
+.philo1{
+    grid-area: philo1;
+}
+
+.philo2{
+    grid-area: philo2;
+}
+
+.exp{
+    background-color: orchid;
+}
+
+.exp1{
+    grid-area: exp1;
+}
+
+.exp2{
+    grid-area: exp2;
+}
+
+.web{
+    background-color: crimson;
+    grid-area: web;
+}
+
+footer{
+    grid-area: footer;
+    border-radius: 30px;
+    background-color: grey;
+
+}
