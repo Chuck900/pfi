@@ -14,11 +14,12 @@ body{
     height: 95vh;
     grid-gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 13% 10% 62% 15%;
+    grid-template-rows: 13% 10% 62% 1fr 15%;
     grid-template-areas: 
                     "header"
                     "nav"
                     "main"
+                    "section"
                     "footer";
 
 }
@@ -30,6 +31,15 @@ header{
     color: white;
     font-weight: bold;
     font-size: 4em;
+    
+}
+
+.ski{
+    height: 50px;
+    float: left;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 15px;
 }
 
 nav{
@@ -233,6 +243,25 @@ main{
 .web{
     background-color: crimson;
     grid-area: web;
+}
+
+section{
+    grid-area: section;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 0.9em;
+}
+
+.imageweb{
+    height: 90px;
+    float: right;
+    padding: 11px;
+}
+
+.exploitation{
+    height: 90px;
+    float: right;
+    padding: 11px;
 }
 
 footer{
