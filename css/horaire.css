@@ -34,11 +34,14 @@ header{
     
 }
 
+.logo{
+    display: inline-block;
+}
+
 .ski{
     height: 50px;
     float: left;
     border-radius: 30px;
-    margin-left: 100px;
     margin-top: 15px;
 }
 

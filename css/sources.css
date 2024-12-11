@@ -14,12 +14,11 @@ body{
     height: 95vh;
     grid-gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 13% 10% 62% 1fr 15%;
+    grid-template-rows: 13% 10% 62% 15%;
     grid-template-areas: 
                     "header"
                     "nav"
                     "main"
-                    "section"
                     "footer";
 
 }
@@ -34,11 +33,15 @@ header{
     
 }
 
+.logo{
+    display: inline-block;
+}
+
+
 .ski{
     height: 50px;
     float: left;
     border-radius: 30px;
-    margin-left: 100px;
     margin-top: 15px;
 }
 
@@ -68,6 +71,17 @@ nav{
     height: 20px;
 }
 
+ul{
+    color: white;
+}
+
+.sources{
+    color: white;
+}
+
+.sources:hover{
+    color: rgb(255, 186, 49);
+}
 
 footer{
     grid-area: footer;
