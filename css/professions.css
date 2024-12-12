@@ -71,6 +71,27 @@ nav{
     height: 20px;
 }
 
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: auto;
+    color: white;
+    width: 70%;
+}
+
+table{
+    width: 1000px;
+    height: 500px;
+}
+
+tr:nth-child(even){
+    background-color: purple;
+}
+
+.metier{
+    width: 70px;
+}
+
 footer{
     grid-area: footer;
     border-radius: 30px;

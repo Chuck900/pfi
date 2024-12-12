@@ -2,6 +2,7 @@
 
 *{
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 body{
@@ -14,7 +15,7 @@ body{
     height: 95vh;
     grid-gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 13% 10% 62% 15%;
+    grid-template-rows: 13% 10% 1fr 15%;
     grid-template-areas: 
                     "header"
                     "nav"
@@ -69,6 +70,23 @@ nav{
     background-color: rgb(255, 186, 49);
     border-radius: 20px;
     height: 20px;
+}
+
+main{
+    color: white;
+    font-size: 1.2em;
+    
+}
+
+.ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.image{
+    border-radius: 800px;
+    border-radius: 100px;
+    width: 200px;
 }
 
 footer{

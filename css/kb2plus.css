@@ -14,7 +14,7 @@ body{
     height: 95vh;
     grid-gap: 8px;
     grid-template-columns: 1fr;
-    grid-template-rows: 13% 10% 62% 15%;
+    grid-template-rows: 13% 10% 1fr 15%;
     grid-template-areas: 
                     "header"
                     "nav"
@@ -68,6 +68,43 @@ nav{
     background-color: rgb(255, 186, 49);
     border-radius: 20px;
     height: 20px;
+}
+
+main{
+    color: white;
+    justify-items: center;
+}
+
+.box{
+    height: 90px;
+    width: 90px;
+    background-color: crimson;
+    margin: 10px;
+}
+
+.box:empty{
+    background-color: rgb(255, 186, 49);
+}
+
+.selection::selection{
+    background-color: crimson;
+    color: rgb(255, 186, 49);
+}
+
+.after::after{
+    color: crimson;
+    content: "Ceci est l'élement";
+}
+
+.before::before{
+    color: rgb(255, 186, 49);
+    content: "Ceci est l'élement";
+}
+
+.first::first-line{
+    font-size: 1.3em;
+    background-color: crimson;
+    font-style: italic;
 }
 
 footer{

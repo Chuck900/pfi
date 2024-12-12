@@ -84,8 +84,8 @@ main{
     height: 95%;
     font-size: 0.8em;
     display: grid;
-    grid-template-columns: repeat(1fr, 6);
-    grid-template-rows: repeat(1fr, 12);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-template-areas: 
                     ". lundi mardi mercredi jeudi vendredi"
                     "a math1 philo1 . philo2 prog4"
@@ -253,6 +253,10 @@ section{
     background-color: white;
     border-radius: 30px;
     font-size: 0.9em;
+}
+
+h2{
+    padding-left: 15px;
 }
 
 .imageweb{
